@@ -1,0 +1,14 @@
+{
+    "name": "mbabker/session-test",
+    "require": {
+        "php": ">=5.4",
+        "joomla/application": "^1.4",
+        "joomla/session": "^1.2",
+        "joomla/uri": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BabDev\\": "src/"
+        }
+    }
+}
