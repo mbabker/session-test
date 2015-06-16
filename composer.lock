@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0de1b09035f1267f74a9cd4ce0541368",
+    "hash": "156487ad526668a920e6e30e09905df4",
     "packages": [
         {
             "name": "joomla/application",
-            "version": "1.4.0",
+            "version": "dev-2.0-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/application.git",
-                "reference": "185b68fe55537281385b637a90e11856ea01c8da"
+                "reference": "8cac25a153c39ed9dd06e5ef6dde45a01ddd4741"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/application/zipball/185b68fe55537281385b637a90e11856ea01c8da",
-                "reference": "185b68fe55537281385b637a90e11856ea01c8da",
+                "url": "https://api.github.com/repos/joomla-framework/application/zipball/8cac25a153c39ed9dd06e5ef6dde45a01ddd4741",
+                "reference": "8cac25a153c39ed9dd06e5ef6dde45a01ddd4741",
                 "shasum": ""
             },
             "require": {
                 "joomla/input": "~1.2",
-                "joomla/registry": "~1.1",
+                "joomla/registry": "2.0.*@dev",
                 "php": ">=5.3.10",
                 "psr/log": "~1.0"
             },
@@ -40,13 +40,12 @@
             "type": "joomla-package",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-2.0-dev": "2.0-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Joomla\\Application\\": "src/",
-                    "Joomla\\Application\\Tests\\": "Tests/"
+                    "Joomla\\Application\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -60,7 +59,7 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2015-03-06 17:37:01"
+            "time": "2015-03-24 22:51:59"
         },
         {
             "name": "joomla/compat",
@@ -101,22 +100,31 @@
         },
         {
             "name": "joomla/event",
-            "version": "1.1.1",
+            "version": "dev-2.0-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/event.git",
-                "reference": "bb957bc45aba897e465384bbe21cd0eb79aca901"
+                "reference": "808997f3f8143e7bf41e0fb97cbe3bfd77745670"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/event/zipball/bb957bc45aba897e465384bbe21cd0eb79aca901",
-                "reference": "bb957bc45aba897e465384bbe21cd0eb79aca901",
+                "url": "https://api.github.com/repos/joomla-framework/event/zipball/808997f3f8143e7bf41e0fb97cbe3bfd77745670",
+                "reference": "808997f3f8143e7bf41e0fb97cbe3bfd77745670",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.10"
             },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0-dev": "2.0-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Event\\": "src/",
@@ -134,7 +142,53 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2014-02-09 01:30:54"
+            "time": "2015-03-19 03:11:18"
+        },
+        {
+            "name": "joomla/filesystem",
+            "version": "dev-2.0-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joomla-framework/filesystem.git",
+                "reference": "db127d41e34a3684f39495c69a8f833c4bc2bc2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joomla-framework/filesystem/zipball/db127d41e34a3684f39495c69a8f833c4bc2bc2b",
+                "reference": "db127d41e34a3684f39495c69a8f833c4bc2bc2b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.10"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
+            "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0-dev": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joomla\\Filesystem\\": "src/",
+                    "Joomla\\Filesystem\\Tests\\": "Tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Joomla Filesystem Package",
+            "homepage": "https://github.com/joomla/joomla-framework-filesystem",
+            "keywords": [
+                "filesystem",
+                "framework",
+                "joomla"
+            ],
+            "time": "2015-05-03 15:53:03"
         },
         {
             "name": "joomla/filter",
@@ -238,16 +292,16 @@
         },
         {
             "name": "joomla/registry",
-            "version": "1.4.5",
+            "version": "dev-2.0-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/registry.git",
-                "reference": "4f926ba961ca45eb95076a1598c3ae689cb02fc5"
+                "reference": "b11b5a7d7bb82e4ac7fb557f1015dcacfa383fa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/registry/zipball/4f926ba961ca45eb95076a1598c3ae689cb02fc5",
-                "reference": "4f926ba961ca45eb95076a1598c3ae689cb02fc5",
+                "url": "https://api.github.com/repos/joomla-framework/registry/zipball/b11b5a7d7bb82e4ac7fb557f1015dcacfa383fa2",
+                "reference": "b11b5a7d7bb82e4ac7fb557f1015dcacfa383fa2",
                 "shasum": ""
             },
             "require": {
@@ -268,7 +322,7 @@
             "type": "joomla-package",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-2.0-dev": "2.0-dev"
                 }
             },
             "autoload": {
@@ -288,38 +342,44 @@
                 "joomla",
                 "registry"
             ],
-            "time": "2015-03-28 17:54:38"
+            "time": "2015-03-28 17:54:50"
         },
         {
             "name": "joomla/session",
-            "version": "1.2.3",
-            "target-dir": "Joomla/Session",
+            "version": "dev-rewrite",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/session.git",
-                "reference": "ef955cf9642793c4ad5874f334069051c33ba604"
+                "reference": "37b9432f77a20af04eefe2cf7a7473ccb1738c3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/session/zipball/ef955cf9642793c4ad5874f334069051c33ba604",
-                "reference": "ef955cf9642793c4ad5874f334069051c33ba604",
+                "url": "https://api.github.com/repos/joomla-framework/session/zipball/37b9432f77a20af04eefe2cf7a7473ccb1738c3f",
+                "reference": "37b9432f77a20af04eefe2cf7a7473ccb1738c3f",
                 "shasum": ""
             },
             "require": {
-                "joomla/event": "~1.1",
-                "joomla/filter": "~1.0",
-                "php": ">=5.3.10"
+                "joomla/event": "2.0.*@dev",
+                "joomla/filter": "~1.1",
+                "joomla/input": "~1.2",
+                "php": ">=5.4"
             },
             "require-dev": {
-                "joomla/test": "~1.0"
+                "joomla/database": "2.0.*@dev",
+                "joomla/filesystem": "2.0.*@dev",
+                "joomla/test": "~1.0",
+                "phpunit/dbunit": "~1.2",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
             },
             "suggest": {
-                "joomla/database": "Install joomla/database if you want to use Database session storage."
+                "joomla/database": "Install joomla/database if you want to use Database session storage.",
+                "joomla/filesystem": "Install joomla/filesystem if you want to use file based session storage."
             },
             "type": "joomla-package",
             "autoload": {
-                "psr-0": {
-                    "Joomla\\Session": ""
+                "psr-4": {
+                    "Joomla\\Session\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -333,7 +393,7 @@
                 "joomla",
                 "session"
             ],
-            "time": "2014-08-18 17:41:06"
+            "time": "2015-06-13 20:19:10"
         },
         {
             "name": "joomla/string",
@@ -384,26 +444,36 @@
         },
         {
             "name": "joomla/uri",
-            "version": "1.1.1",
+            "version": "dev-2.0-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla-framework/uri.git",
-                "reference": "980e532e4235bb8f1ada15b28822abbeb171da3f"
+                "reference": "3fd1705cebd012972e4b33ca51f96c2f6f4c87fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla-framework/uri/zipball/980e532e4235bb8f1ada15b28822abbeb171da3f",
-                "reference": "980e532e4235bb8f1ada15b28822abbeb171da3f",
+                "url": "https://api.github.com/repos/joomla-framework/uri/zipball/3fd1705cebd012972e4b33ca51f96c2f6f4c87fe",
+                "reference": "3fd1705cebd012972e4b33ca51f96c2f6f4c87fe",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.10"
             },
+            "require-dev": {
+                "joomla/test": "~1.0",
+                "phpunit/phpunit": "4.*",
+                "squizlabs/php_codesniffer": "1.*"
+            },
             "type": "joomla-package",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.0-dev": "2.0-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Joomla\\Uri\\": "src/",
-                    "Joomla\\Uri\\Tests\\": "Tests/"
+                    "Joomla\\Uri\\Tests\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -417,7 +487,7 @@
                 "joomla",
                 "uri"
             ],
-            "time": "2014-02-09 02:57:17"
+            "time": "2015-03-24 00:27:49"
         },
         {
             "name": "joomla/utilities",
@@ -508,7 +578,14 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "joomla/application": 20,
+        "joomla/event": 20,
+        "joomla/filesystem": 20,
+        "joomla/registry": 20,
+        "joomla/session": 20,
+        "joomla/uri": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

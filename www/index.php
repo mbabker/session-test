@@ -1,6 +1,9 @@
 <?php
+// Define constants
+define('JPATH_ROOT', dirname(__DIR__));
+
 // Ensure we've initialized Composer
-if (!file_exists(dirname(__DIR__) . '/vendor/autoload.php'))
+if (!file_exists(JPATH_ROOT . '/vendor/autoload.php'))
 {
 	header('HTTP/1.1 500 Internal Server Error', null, 500);
 	echo 'Composer is not set up properly, please run "composer install".';
@@ -8,7 +11,7 @@ if (!file_exists(dirname(__DIR__) . '/vendor/autoload.php'))
 	exit;
 }
 
-require dirname(__DIR__) . '/vendor/autoload.php';
+require JPATH_ROOT . '/vendor/autoload.php';
 
 // Execute the application
 try

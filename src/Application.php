@@ -37,9 +37,6 @@ final class Application extends AbstractWebApplication
 		// Calculate the session lifetime.
 		$lifetime = (($this->get('lifetime')) ? $this->get('lifetime') * 60 : 900);
 
-		// Get the session handler from the configuration.
-		$handler = $this->get('session_handler', 'none');
-
 		// Initialize the options for the Session object.
 		$options = [
 			'name'      => $name,
@@ -48,7 +45,7 @@ final class Application extends AbstractWebApplication
 		];
 
 		// Instantiate the session object.
-		$session = Session::getInstance($handler, $options);
+		$session = new Session(null, $options);
 		$session->initialise($this->input);
 
 		if ($session->getState() == 'expired')
