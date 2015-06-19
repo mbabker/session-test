@@ -45,8 +45,7 @@ final class Application extends AbstractWebApplication
 		];
 
 		// Instantiate the session object.
-		$session = new Session(null, $options);
-		$session->initialise($this->input);
+		$session = new Session(null, null, $options);
 
 		if ($session->getState() == 'expired')
 		{
